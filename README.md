@@ -1,2 +1,2 @@
 # rest-assured
-Repository for the course of RestAssured by javastart.pl
+Repository for the course of Rest Assured by javastart.pl
