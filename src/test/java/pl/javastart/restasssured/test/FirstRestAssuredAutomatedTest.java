@@ -9,9 +9,10 @@ import static io.restassured.RestAssured.given;
 
 public class FirstRestAssuredAutomatedTest {
 
+    // Unnamed path parameters usage
     @Test
     public void givenNonExistingPetIdWhenGetPenThenPetNotFoundTest() {
-        given().when().get("https://swaggerpetstore.przyklady.javastart.pl/v2/pet/0").then().statusCode(404);
+        given().when().get("https://swaggerpetstore.przyklady.javastart.pl/v2/pet/{param}", 0).then().statusCode(404);
     }
 
     @Test
