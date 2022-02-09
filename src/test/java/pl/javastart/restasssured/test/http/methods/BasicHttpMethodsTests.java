@@ -13,7 +13,6 @@ public class BasicHttpMethodsTests {
 
     @Test
     public void givenPetWhenPostPetThenPetIsCreatedTest() {
-
         Category category = new Category();
         category.setId(1);
         category.setName("dogs");
@@ -45,7 +44,6 @@ public class BasicHttpMethodsTests {
 
     @Test
     public void givenExistingPetWhenUpdatePetNameThenPetIsChangedTest() {
-
         Category category = new Category();
         category.setId(1);
         category.setName("dogs");
@@ -75,7 +73,6 @@ public class BasicHttpMethodsTests {
 
     @Test
     public void givenExistingPetIdWhenDeletingPetThenIsDeletedTest() {
-
         Category category = new Category();
         category.setId(1);
         category.setName("dogs");
