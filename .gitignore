@@ -1,4 +1,6 @@
-*/target/**
+# Maven
+log/
+target/
 
 ### IntelliJ IDEA ###
 .idea
