@@ -4,12 +4,15 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pl.javastart.main.pojo.User;
+import pl.javastart.restasssured.test.testng.TestListener;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
+@Listeners(TestListener.class)
 public class UserUpdateTests extends TestBase {
 
     @Test
