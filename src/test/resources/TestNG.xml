@@ -1,6 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Parametrized Suite">
+    <listeners>
+        <listener class-name="pl.javastart.restasssured.test.testng.TestListener"/>
+    </listeners>
     <test name="Parametrized Test 1">
         <parameter name="petId" value="0"/>
         <parameter name="expectedMessage" value="Pet not found"/>
